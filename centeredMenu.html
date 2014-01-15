@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <meta charset="utf-8">
+  <title>Horizontal Menu - Fix Width</title>
+  <base href="http://axmann.harald-huber.com/">
+  <meta name="robots" content="index,follow">
+
+<link type="text/css" rel="stylesheet" href="https://raw.github.com/necolas/normalize.css/master/normalize.css">
+<style>
+body,div,h1,h2,h3,h4,h5,h6,p,blockquote,figure,pre,code,ol,ul,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea{margin:0;padding:0;font-family:'FrutigerNeueW01-Regular',Tahoma,Arial,Verdana}
+#mti_wfs_colophon{display:none !important}
+table{border-collapse:collapse;border-spacing:0}
+caption,th,td{text-align:left;vertical-align:top}
+abbr,acronym{font-variant:normal;border-bottom:1px dotted #666;cursor:help}
+blockquote,q{quotes:none}
+fieldset,img{border:0}
+li{list-style-type:none}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+del{text-decoration:line-through}
+ins{text-decoration:none}
+a{color:#595959}
+a:hover{color:#FCC700}
+:focus{outline:0}
+a:visited{text-decoration:none;border-bottom:0px dotted #C0C0C0}
+body{font:83.5%/1.3em 'FrutigerNeueW01-Regular',Tahoma,Arial,Verdana;color:#595959}
+input,button,textarea,select{font-family:inherit;font-size:99%;font-weight:inherit}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+h1{font-size:160%}
+h2{font-size:130%}
+h3{font-size:130%}
+h4{font-size:120%}
+h5{font-size:110%}
+h6{font-size:100%}
+table{font-size:inherit;width:97%;border:2px solid #F8F8F8}
+table tr td, table tr th{text-align:center;padding:1% 2%}
+table thead tr td, table tr th{text-align:center;background-color:#EFEFEF}
+table tr:nth-child(2n+2){background-color:#EFEFEF}
+table tfoot tr:last-of-type{background-color:#ccc}
+caption,th,thead td{font-weight:bold}
+h1,h2,h3,h4,h5,h6{margin-top:1em}
+h1,h2,h3,h4,h5,h6,p,pre,blockquote,table,ol,ul,form{margin-bottom:12px}
+
+.invisible {
+    display: inline;
+    height: 0;
+    left: -1000px;
+    overflow: hidden;
+    position: absolute;
+    top: -1000px;
+    width: 0;
+}
+.clear
+{
+	float: none;
+	clear: both;
+}
+#wrapper
+{
+	width:960px;
+	margin:0 auto;
+	border: 0px solid red;
+}
+#wrapper #header .mod_navigation
+{
+	width: 100%;
+	border: 1px solid green;
+	height: 27px;
+	overflow: hidden;
+}
+#wrapper #header .mod_navigation ul
+{
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+#wrapper #header .mod_navigation ul li
+{
+	border-right: 1px solid orange;
+	margin:0;
+	white-space: nowrap;
+	float: left;
+	display: block;
+	background-color: #ececec;
+}
+#wrapper #header .mod_navigation ul li.last
+{
+	
+	border: 0px;
+}
+#wrapper #header .mod_navigation ul li a,
+#wrapper #header .mod_navigation ul li span
+{
+	display: block;
+	text-align: center;
+	
+	text-decoration: none;
+	overflow: visible;
+	padding: 5px 38.66px;
+}
+#wrapper #header .mod_navigation ul li.last a,
+#wrapper #header .mod_navigation ul li.last span
+{
+	
+	padding: 5px 31px;
+}
+#wrapper #header .mod_navigation ul li a:hover
+{
+	background-color: #999;
+}
+#wrapper #header .mod_navigation ul li ul.level_2
+{
+	display: none;
+}
+#container
+{
+	margin: 10px 0px;
+	border: 1px solid #000;
+}
+</style>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+ 
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+</head>
+<body id="top" class="">
+
+<div id="wrapper">
+
+<header id="header">
+	<div class="inside">
+		<nav class="mod_navigation block" id="naviContainer">
+		
+		<a href="de/jobe.html#skipNavigation1" class="invisible">Navigation überspringen</a>
+
+		<ul class="level_1">
+			<li class="sibling first"><span class="sibling first">Home</span></li>
+			<li class="submenu sibling"><a href="de/chaparral.html" title="Neuboote" class="submenu sibling">Neuboote</a>
+				<ul class="level_2">
+					<li class="first"><a href="de/chaparral.html" title="Chaparral" class="first">Chaparral</a></li>
+					<li><a href="de/greenline.html" title="Greenline">Greenline</a></li>
+					<li class="last"><a href="de/galeon.html" title="Galeon" class="last">Galeon</a></li>
+				</ul>
+			</li>
+			<li class="sibling"><a href="de/bootszubehoer.html" title="Bootszubehör" class="sibling">Bootszubehör</a></li>
+			<li class="submenu sibling"><a href="de/gebrauchte/boote.html" title="Gebrauchtes" class="submenu sibling">Gebrauchtes</a>
+				<ul class="level_2">
+					<li class="first"><a href="de/gebrauchte/boote.html" title="Boote" class="first">Boote</a></li>
+					<li><a href="de/gebrauchte/motoren.html" title="Motoren">Motoren</a></li>
+					<li class="last"><a href="de/gebrauchte/zubehoer.html" title="Zubehör" class="last">Zubehör</a></li>
+				</ul>
+			</li>
+			<li class="active"><span class="active">Jobe</span></li>
+			<li class="submenu sibling"><a href="de/schiffsfuehrerschule/schiffsfuehrerpatent-10m.html" title="Schiffsführerschule" class="submenu sibling">Schiffsführerschule</a>
+				<ul class="level_2">
+					<li class="first"><a href="de/schiffsfuehrerschule/schiffsfuehrerpatent-10m.html" title="Schiffsführerpatent 10m" class="first">Schiffsführerpatent 10m</a></li>
+					<li class="last"><a href="de/schiffsfuehrerschule/kuestenpatent-fb1.html" title="Küstenpatent FB1" class="last">Küstenpatent FB1</a></li>
+				</ul>
+			</li>
+			<li class="sibling last"><a href="de/service.html" title="Service" class="sibling last">Service</a></li>
+		</ul>
+		<div class="clear"></div>
+		<a id="skipNavigation1" class="invisible">&nbsp;</a>
+		
+		</nav>
+	</div>
+</header>
+    
+    
+<div id="container">
+	<div id="main">
+		<h1>Horizontales Menu 100%</h1>
+		
+		<p>Einzelne Elemente mit dynamischer Breite.<br>
+		Gesamtbreite fix!
+		</p>
+		<h2>CSS</h2>
+		<p>
+		.wrapper: 960px;
+		</p>
+
+	</div>
+</div>
+
+
+</div>
+
+  
+</body>
+</html>
